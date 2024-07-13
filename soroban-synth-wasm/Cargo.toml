@@ -11,7 +11,7 @@ rust-version.workspace = true
 publish = false
 
 [dependencies]
-wasm-encoder = "=0.36.2"
+wasm-encoder = "=0.213.0"
 wasmparser = { workspace = true }
 soroban-env-common = { workspace = true }
 stellar-xdr = { workspace = true, features = ["std"] }
@@ -23,5 +23,5 @@ testutils = ["soroban-env-common/testutils"]
 adversarial = []
 
 [dev-dependencies]
-expect-test = "=1.4.1"
-wasmprinter = "=0.2.72"
+expect-test = "=1.5.0"
+wasmprinter = "=0.213.0"
