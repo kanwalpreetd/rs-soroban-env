@@ -11,7 +11,7 @@ jobs:
     runs-on: 'ubuntu-20.04'
     steps:
     - name: "check soroban-env-common/src/meta.rs was modified"
-      uses: brettcannon/check-for-changed-files@36aaa76474fc979db4e19e44c05e8e978759ac01
+      uses: brettcannon/check-for-changed-files@871d7b8b5917a4f6f06662e2262e8ffc51dff6d1
       with:
         file-pattern: "soroban-env-common/src/meta.rs"
     - name: "check 'pre_release_version:' changed in the diff"
@@ -20,6 +20,6 @@ jobs:
         github-token: ${{github.token}}
         diffContainsRegex: " pre_release_version: [0-9]+,"
     - name: "check soroban-test-wasms/wasm-workspace/opt/*.wasm were modified"
-      uses: brettcannon/check-for-changed-files@36aaa76474fc979db4e19e44c05e8e978759ac01
+      uses: brettcannon/check-for-changed-files@871d7b8b5917a4f6f06662e2262e8ffc51dff6d1
       with:
         file-pattern: "soroban-test-wasms/wasm-workspace/opt/curr/*.wasm"
