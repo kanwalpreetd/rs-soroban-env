@@ -18,8 +18,8 @@ testutils = ["soroban-env-host/testutils"]
 next = ["soroban-env-host/next"]
 
 [dependencies]
-anyhow = { version = "1.0.75", features = [] }
-thiserror = "1.0.40"
+anyhow = { version = "1.0.86", features = [] }
+thiserror = "1.0.55"
 soroban-env-host = { workspace = true,  features = ["recording_mode", "unstable-next-api"]}
 static_assertions = "1.1.0"
 rand = "0.8.5"
